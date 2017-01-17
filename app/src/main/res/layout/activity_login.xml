@@ -8,9 +8,8 @@ android:fitsSystemWindows="true"
 tools:context="com.biblioteca.biblioteca.LoginActivity"
 android:background="@color/cardview_dark_background">
 
-    <include layout="@layout/cv_book"></include>
-
     <android.support.v7.widget.RecyclerView
+        android:id="@+id/RV_BookList"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 

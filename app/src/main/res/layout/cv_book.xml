@@ -22,6 +22,7 @@
             android:layout_weight="3">
 
             <ImageView
+                android:id="@+id/IV_BookImage"
                 android:layout_width="100dp"
                 android:layout_height="150dp"
                 android:layout_marginLeft="8dp"
@@ -44,6 +45,7 @@
                 android:layout_height="wrap_content">
 
                 <TextView
+                    android:id="@+id/CV_TV_Titulo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Wigetta y el Baculo Dorado"
@@ -53,81 +55,116 @@
 
             </android.support.design.widget.TextInputLayout>
 
-            <android.support.design.widget.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Autor(es): "
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="7dp"/>
 
                 <TextView
                     android:id="@+id/CV_TV_Autor"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Autor(es):"
-                    android:layout_marginLeft="10dp"
+                    android:text="Juan"
                     android:layout_marginRight="10dp"
                     android:layout_marginTop="7dp"/>
 
+            </LinearLayout>
 
-            </android.support.design.widget.TextInputLayout>
 
-            <android.support.design.widget.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Editorial: "
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="7dp"/>
 
                 <TextView
                     android:id="@+id/CV_TV_Editorial"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Editorial:"
-                    android:layout_marginLeft="10dp"
+                    android:text="Editorial: "
                     android:layout_marginRight="10dp"
                     android:layout_marginTop="7dp"/>
 
-            </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
 
-            <android.support.design.widget.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/CV_TV_Repisa"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="No. En Repisa:"
+                    android:text="No. En Repisa: "
                     android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
                     android:layout_marginTop="7dp"/>
-
-            </android.support.design.widget.TextInputLayout>
-
-            <android.support.design.widget.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
 
                 <TextView
-                    android:id="@+id/CV_TV_Prestamo"
+                    android:id="@+id/CV_TV_NoRepisa"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="No. En Prestamo:"
-                    android:layout_marginLeft="10dp"
+                    android:text="10"
                     android:layout_marginRight="10dp"
                     android:layout_marginTop="7dp"/>
 
-            </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
 
-            <android.support.design.widget.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/CV_TV_Vendidos"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="No. Vendidos:"
+                    android:text="No. En Prestamo: "
                     android:layout_marginLeft="10dp"
+                    android:layout_marginTop="7dp"/>
+
+                <TextView
+                    android:id="@+id/CV_TV_NoPrestamo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="34"
                     android:layout_marginRight="10dp"
                     android:layout_marginTop="7dp"/>
 
-            </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="No. Vendidos: "
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="7dp"/>
+
+                <TextView
+                    android:id="@+id/CV_TV_NoVendidos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="34"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="7dp"/>
+
+            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -144,6 +181,7 @@
                     android:layout_weight="5"/>
 
                 <Button
+                    android:id="@+id/CV_BTN_Compra"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:theme="@style/RaisedButtonRed"
